@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+	background-color: hsl(218, 22%, 67%);
+	font-family: 'Karla', sans-serif;
+}
+li{
+	list-style:none;
+}
+.main-box{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	width:636px;	
+}
+header{
+	background:#f2f2f2;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	padding:40px;			
+}
+header h2{
+	color: hsl(179, 62%, 43%);
+	margin-bottom:30px;	
+}
+header h3{
+	color:  hsl(71, 73%, 54%);
+	margin-bottom:17px;
+}
+header p{
+	color: hsl(218, 22%, 67%);
+	font-weight: 400;
+	line-height: 25px
+}
+.grid{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	
+	 
+}
+.grid .left{
+	background: hsl(179, 56%, 43%);
+	border-bottom-left-radius:8px;
+	padding:40px 29px 31px 36px;	
+}
+.grid .left h3{
+	color: #f1f1f1;
+	margin-bottom: 20px
+}
+.grid .left .money{
+	color: #f1f1f1;
+	font-size:41px;
+	font-weight: 700;
+		
+}
+.grid .left .money span{
+	font-size: 18px;
+	margin-left: 15px;
+	font-weight: 100;
+	display: block;
+	text-align: center;
+	margin-top: -35px;
+	color: hsl(204, 43%, 93%) !important;
+}
+.grid .left a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background:  hsl(71, 73%, 54%);
+	padding: 21px 66px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 17px;
+	font-weight: 700;
+	box-shadow: 0 2px 4px #333
+}
+.grid .left p{
+	margin-top: 18px;
+	margin-bottom: 28px;
+	color: #f1f1f1;
+}
+.grid .right{
+	background: hsl(179, 72%, 43%);
+	border-bottom-right-radius:8px;
+	padding:40px;
+	
+}
+.grid .right h3{
+	color: #f1f1f1;
+	margin-bottom: 26px;
+}
+.grid .right ul{
+	color: #f1f1f1;
+	font-weight: 200;
+}
+.grid .right ul li{
+	margin-bottom: 6px;
+}
+/* media quries*/
+
+@media (max-width:768px){
+	
+	.main-box{
+		width:357px;
+		margin: 4rem auto 2rem auto; 	
+	}
+	.grid{
+		grid-template-columns: 1fr;
+	}
+	.grid .left{
+		border-bottom-left-radius:0px;
+	}
+	.grid .right{
+		border-bottom-left-radius:8px;
+		
+	}
+	
+	
+}
